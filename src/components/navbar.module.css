@@ -1,0 +1,144 @@
+
+.all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100svw;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.allshown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100svw;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--tbkg);
+    color: var(--text);
+    display: flex;
+    visibility: show;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 0%;
+    height: 100%;
+    background-color: var(--bkg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.sidebarshown{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bkg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.sidebartrans{
+    visibility: hidden;
+    transition: all 0.2s cubic-bezier(1, 0, 1, 1);
+}
+.sidebartransshown{
+    visibility: show;
+    transition: all 0.2s cubic-bezier(1, 0, 1, 1);
+}
+.nofancy{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.main{
+
+    position: fixed;
+    z-index: 999;
+    /* z-index: 1002; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 7svh;
+
+    background-color: var(--bkg);
+    color: var(--text);
+
+}
+.mainbelow{
+
+    position: fixed;
+    z-index: 999;
+    /* z-index: 1002; */
+
+    top: 7svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 1svh;
+
+    background: linear-gradient(180deg, var(--bkg) 0%, var(--bkg) 0.01%, rgba(0,0,0,0) 100%);
+    /* background-color: var(--bkg); */
+
+}
+.mainhidden{
+
+    position: fixed;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 7svh;
+    
+    background-color: rgba(0,0,0,0);
+    color: var(--text);
+
+}
+
+.burger{
+
+    display: fixed;
+    z-index: 1002;
+    height: 100%;
+    width: 7svh;
+    padding: 2svh 2svh;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
