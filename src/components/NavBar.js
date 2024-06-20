@@ -22,6 +22,7 @@ function NavBar(prams) {
                     </div>
                     
                 </div>
+                <div onClick={toggleSidebarState} className={sidebar ? styles.clickOff : styles.clickOffhidden}/>
             </div>
             <div className={styles.main}/>
             <div className={styles.mainbelow}/>

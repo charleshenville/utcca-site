@@ -7,7 +7,6 @@ import Gallery from './components/Gallery.js';
 function App() {
   return (
     <div className="App">
-      {/* <NavBar report='none'/> */}
       <NavBar report={false}/>
       <Routes>
         <Route exact path='/' element={<Home />} />

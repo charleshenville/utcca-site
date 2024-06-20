@@ -97,6 +97,7 @@
     color: var(--text);
 
 }
+
 .mainbelow{
 
     position: fixed;
@@ -141,4 +142,38 @@
     box-sizing: border-box;
     cursor: pointer;
 
+}
+
+.clickOff{
+
+    display: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0);
+    
+}
+.clickOffhidden{
+
+    display: none;
+    visibility: hidden;
+
+}
+
+@media screen and (max-width: 800px) {
+    .sidebarshown{
+        width: 100%;
+    }
+    .main{
+        height: 10svh;
+    }
+    .mainbelow{
+        top: 10svh;
+    }
+    .burger{
+        width: 10svh;
+    }
 }
