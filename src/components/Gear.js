@@ -1,6 +1,6 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import './Gear.css'; // Import the CSS for the spinning animation
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+import './gear.module.css'; // Import the CSS for the spinning animation
 
 const Gear = () => {
   return (

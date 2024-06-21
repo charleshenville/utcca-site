@@ -49,8 +49,8 @@ const TeamBubble = () => {
 
     return (
         <svg ref={svgRef} className={styles.teambubble} viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_f_262_332)">
-            {/* <g> */}
+            {/* <g filter="url(#filter0_f_262_332)"> */}
+            <g>
                 <circle className={styles.circleIdentify} cx="3" cy="3" r="2" fill="url(#paint0_radial_262_335)" />
                 <circle className={styles.circleIdentify} cx="11" cy="3" r="2" fill="url(#paint1_radial_262_335)" />
                 <circle className={styles.circleIdentify} cx="3" cy="11" r="2" fill="url(#paint2_radial_262_335)" />

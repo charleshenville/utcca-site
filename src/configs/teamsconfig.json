@@ -1,0 +1,253 @@
+[
+    {
+        "id": 0,
+        "name": "Hardware",
+        "description": "Develop custom hardware and firmware for our installations while working closely alongside the Design and Artistry Team.",
+        "skills": [
+            "C/C++",
+            "Arduino",
+            "Python",
+            "Electrical Engineering",
+            "Firmware Development",
+            "Hardware Design",
+            "Microcontrollers",
+            "Sensors",
+            "Actuators",
+            "PCB Design",
+            "Soldering",
+            "Prototyping",
+            "Solidworks",
+            "Git",
+            "Debugging",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "PCB Design",
+            "Computer Aided Design",
+            "Embedded Systems",
+            "3D Printing"
+        ],
+        "gradient-light": {
+            "start": "#FF758E",
+            "end": "#FF0000"
+        },
+        "gradient-dark": {
+            "start": "#A0021E",
+            "end": "#FF0000"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Frontend Software",
+        "description": "Employ technical and problem solving skills to write software to drive visual aspects of our displays and develop team showcase websites.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Redux",
+            "WebGL",
+            "WebSockets",
+            "Node.js",
+            "Express",
+            "RESTful APIs",
+            "Git",
+            "Agile Development",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "Computer Graphics",
+            "Web Development",
+            "Web Frameworks",
+            "Audio Visualizations"
+        ],
+        "gradient-light": {
+            "start": "#AF6A02",
+            "end": "#FF4B00"
+        },
+        "gradient-dark": {
+            "start": "#FFC875",
+            "end": "#FF6B00"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Logistics",
+        "description": "Plan events and showcases while ensuring feasibility. Reach out to potential sponsors and develop your networking skills.",
+        "skills": [
+            "Event Planning",
+            "Project Management",
+            "Finance & Budgeting",
+            "Sponsor Outreach",
+            "Networking",
+            "Marketing",
+            "Social Media Management",
+            "Graphic Design",
+            "Agile Development",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "Event Planning",
+            "Project Management",
+            "Finance & Budgeting",
+            "Sponsor Outreach"
+        ],
+        "gradient-light": {
+            "start": "#6D6B32",
+            "end": "#D3B100"
+        },
+        "gradient-dark": {
+            "start": "#E6FF83",
+            "end": "#FFE81A"
+        }
+    },
+    {
+        "id": 3,
+        "name": "GPU",
+        "description": "Develop highly parallelized software used to render scenes or perform high volumes of computation. Work closely alongside the GameDev Team.",
+        "skills": [
+            "C/C++",
+            "CUDA",
+            "OpenGL",
+            "Vulkan",
+            "DirectX",
+            "GLSL",
+            "Bend",
+            "Shader Programming",
+            "Parallel Programming",
+            "Computer Graphics",
+            "Game Engines",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "GPU Programming",
+            "Parallel Computing",
+            "Compute Shaders",
+            "Neural Networks"
+        ],
+        "gradient-light": {
+            "start": "#274B24",
+            "end": "#11D300"
+        },
+        "gradient-dark": {
+            "start": "#83FFC4",
+            "end": "#2CFF1A"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Backend Software",
+        "description": "Enhance your programming and machine learning skills by developing invisible, but critical software for our interactive displays and artworks.",
+        "skills": [
+            "Python",
+            "Django",
+            "Flask",
+            "SQL",
+            "NoSQL",
+            "Databases",
+            "RESTful APIs",
+            "WebSockets",
+            "Pytorch",
+            "Tensorflow",
+            "Scikit-learn",
+            "Git",
+            "Agile Development",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "Computer Vision",
+            "Audio & Image Processing",
+            "Classification Models",
+            "Generative AI",
+            "Cloud Technologies"
+        ],
+        "gradient-light": {
+            "start": "#25244B",
+            "end": "#1E00D3"
+        },
+        "gradient-dark": {
+            "start": "#9583FF",
+            "end": "#471AFF"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Design & Artistry",
+        "description": "Design key components of team infrastructure and work alongside all other Teams during the implementation of plans. Create concept art for new installations.",
+        "skills": [
+            "Adobe Suite",
+            "Sketch",
+            "Figma",
+            "Illustration",
+            "Typography",
+            "Color Theory",
+            "Layout",
+            "Prototyping",
+            "User Experience",
+            "User Interface",
+            "3D Modelling",
+            "Texturing",
+            "Animation",
+            "Rigging",
+            "Lighting",
+            "Shading",
+            "Rendering",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "Graphic Design",
+            "Web & System Design",
+            "Social Media Management",
+            "Artistic Applications of Technology"
+        ],
+        "gradient-light": {
+            "start": "#3A244B",
+            "end": "#9000D3"
+        },
+        "gradient-dark": {
+            "start": "#E683FF",
+            "end": "#B61AFF"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Game Development",
+        "description": "Develop skills learning and using new software and frameworks to develop and design video games. Work closely alongside the GPU Team.",
+        "skills": [
+            "Unity",
+            "C#",
+            "Game Design",
+            "Game Development",
+            "Game Engines",
+            "3D Modelling",
+            "Texturing",
+            "Animation",
+            "Rigging",
+            "Lighting",
+            "Shading",
+            "Rendering",
+            "Testing",
+            "Documentation"
+        ],
+        "explore": [
+            "Concepts in Game Design",
+            "Procedural Art Generation",
+            "Game Engines",
+            "3D Modelling"
+        ],
+        "gradient-light": {
+            "start": "#4B2443",
+            "end": "#CF00D3"
+        },
+        "gradient-dark": {
+            "start": "#FF83B0",
+            "end": "#FF1AF6"
+        }
+    }
+]
