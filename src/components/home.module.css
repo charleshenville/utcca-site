@@ -15,7 +15,7 @@
 .bighead{
 
     width: 100%;
-    height: 100svh;
+    /* height: 1080px; */
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -33,6 +33,7 @@
 .gaussianb{
 
     width: 100%;
+    z-index: -1;
     
 }
 
@@ -48,7 +49,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    background-color: var(--bkg);
+    /* background-color: var(--bkg); */
     position: relative;
 
 }
@@ -63,15 +64,6 @@
     z-index: 4;
     color: var(--text);
 
-}
-
-@media screen and (min-width: 800px) {
-    .aboutHeader{
-        font-size: calc(180px + 0.5vw);
-    }
-    .aboutBody{
-        font-size: calc(24px + 0.5vw);
-    }
 }
 
 .aboutBody{
@@ -93,4 +85,57 @@
     right: 0;
     z-index: 3;
 
+}
+
+.teamBanner{
+    width: 100%;
+    min-height: 70svh;
+    max-height: max-content;
+    padding: 10vw;
+    margin-top: 20vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+    position: relative;
+}
+
+.teambubble{
+
+    position: absolute;
+    width: 50%;
+    max-height: 60vh;
+    margin-left: 10vw;
+    left: 0;
+    z-index: 3;
+    
+}
+
+.teamHeader{
+
+    font-size: calc(128px + 0.5vw);
+    font-family: 'OffBit', sans-serif;
+    width: 80%;
+    justify-content: left;
+    text-align: right;
+    z-index: 4;
+    color: var(--text);
+
+}
+
+.circleIdentify{
+    visibility: visible;
+}
+
+@media screen and (min-width: 800px) {
+    .aboutHeader{
+        font-size: calc(180px + 0.5vw);
+    }
+    .teamHeader{
+        font-size: calc(180px + 0.5vw);
+    }
+    .teamBanner{
+        margin-top: 40vh;
+    }
 }
