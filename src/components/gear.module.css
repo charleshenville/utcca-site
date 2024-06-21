@@ -1,0 +1,22 @@
+.gearContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Adjust based on your layout */
+  width: 10vw; /* Adjust based on your layout */
+}
+
+.faSpin {
+  font-size: calc(128px + 0.5vw); /* Adjust the size of the gear icon */
+  color: #615d5d; /* Adjust the color of the gear icon */
+  animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
