@@ -29,22 +29,13 @@
 }
 
 .galleryTextHeader {
-    font-size: calc(128px + 0.5vw);
+    font-size: calc(64px + 0.5vw);
     font-family: 'OffBit', sans-serif;
     justify-content: flex-start; /* Changed from 'left' */
     text-align: left;
     z-index: 4;
     color: var(--text);
     margin-right: 20px; /* Add some space between the header and the gear icon */
-}
-
-@media screen and (min-width: 800px) {
-    .galleryTextHeader {
-        font-size: calc(180px + 0.5vw);
-    }
-    .galleryTextBody {
-        font-size: calc(24px + 0.5vw);
-    }
 }
 
 .galleryTextBody {
@@ -56,3 +47,14 @@
     font-family: 'Helvetica Neue', sans-serif;
     color: var(--text);
 }
+
+@media screen and (min-width: 800px) {
+    .galleryTextHeader {
+        font-size: calc(160px + 0.5vw);
+    }
+    .galleryTextBody {
+        font-size: calc(20px + 0.5vw);
+    }
+}
+
+
