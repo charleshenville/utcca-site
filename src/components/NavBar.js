@@ -4,6 +4,7 @@ import styles from './navbar.module.css';
 
 function NavBar(prams) {
 
+    // TODO: make top bar like glass with blur
     const [sidebar, setSidebar] = useState(false);
 
     function toggleSidebarState() {
