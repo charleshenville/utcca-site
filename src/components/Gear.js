@@ -1,11 +1,12 @@
 import React from 'react';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
-import './gear.module.css'; // Import the CSS for the spinning animation
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import styles from './gear.module.css'; // Import the CSS module
+
 
 const Gear = () => {
   return (
-    <div className="gear-container">
-      <i className="fas fa-cog fa-spin"></i>
+    <div className={styles.gearContainer}>
+      <i className={`fas fa-cog ${styles.faSpin}`}></i>
     </div>
   );
 };
