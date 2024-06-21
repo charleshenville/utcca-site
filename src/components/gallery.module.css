@@ -1,4 +1,4 @@
-.master-container{
+.master-container {
     width: 100%;
     min-height: 100svh;
     max-height: max-content;
@@ -8,9 +8,7 @@
     justify-content: center;
 }
 
-
-.aboutContainer{
-    
+.galleryTextContainer {
     width: 100%;
     min-height: 100svh;
     max-height: max-content;
@@ -19,44 +17,42 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start; /* Changed from 'left' */
     justify-content: center;
     background-color: var(--bkg);
     position: relative;
-    border: 1px solid var(--text);
-    
 }
 
-.aboutHeader{
-    
+.headerAndGear {
+    display: flex;
+    align-items: center;
+}
+
+.galleryTextHeader {
     font-size: calc(128px + 0.5vw);
     font-family: 'OffBit', sans-serif;
-    width: 100%;
-    justify-content: left;
+    justify-content: flex-start; /* Changed from 'left' */
     text-align: left;
     z-index: 4;
     color: var(--text);
-
-
+    margin-right: 20px; /* Add some space between the header and the gear icon */
 }
 
 @media screen and (min-width: 800px) {
-    .aboutHeader{
+    .galleryTextHeader {
         font-size: calc(180px + 0.5vw);
     }
-    .aboutBody{
+    .galleryTextBody {
         font-size: calc(24px + 0.5vw);
     }
 }
 
-.aboutBody{
+.galleryTextBody {
     font-size: calc(12px + 0.5vw);
     width: 50%;
-    justify-content: left;
+    justify-content: flex-start; /* Changed from 'left' */
     text-align: left;
     z-index: 4;
     font-family: 'Helvetica Neue', sans-serif;
     color: var(--text);
-
 }
-
