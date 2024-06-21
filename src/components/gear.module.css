@@ -4,10 +4,11 @@
   align-items: center;
   height: 10vh; /* Adjust based on your layout */
   width: 10vw; /* Adjust based on your layout */
+  padding-left: 3%;
 }
 
 .faSpin {
-  font-size: calc(128px + 0.5vw); /* Adjust the size of the gear icon */
+  font-size: calc(64px + 0.5vw); /* Adjust the size of the gear icon */
   color: #615d5d; /* Adjust the color of the gear icon */
   animation: fa-spin 2s infinite linear;
 }
@@ -19,4 +20,11 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (min-width: 800px) {
+  .faSpin {
+    font-size: calc(160px + 0.5vw); /* Adjust the size of the gear icon */
+  }
+
 }
