@@ -2,10 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './home.module.css';
 import TeamBubble from './TeamBubble';
+import TeamCards from './TeamCards';
 
 function Home() {
 
     const win_width = window.innerWidth;
+
+    const userAgent = navigator.userAgent;
+    const chromiumBrowsers = ['Chrome', 'Chromium', 'Edge', 'Opera', 'Brave', 'Arc'];
+
+    const isChromium = chromiumBrowsers.some(browser => userAgent.includes(browser));
+    const isFirefox = userAgent.includes('Firefox');
+    const isSafari = userAgent.includes('Safari') && !userAgent.includes('Chrome');
 
     const requestRef = useRef();
     const previousTimeRef = useRef();
@@ -120,7 +128,7 @@ function Home() {
                 }
 
                 <svg className={styles.gaussianb} viewBox={mobile ? "0 0 540 970" : "0 0 970 540"} fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#blurblur)">
+                    <g filter={isChromium ? "url(#blurblur)" : ""}>
                         {/* <circle r="250" cx="200" cy="300" fill="#DB19FA" fillOpacity="0.75" />
                         <circle r="250" cx="437" cy="300" fill="#FFC806" fillOpacity="0.75" />
                         <circle r="250" cx="674" cy="300" fill="#EF4437" fillOpacity="0.75" /> */}
@@ -148,7 +156,7 @@ function Home() {
                     of bringing them to exhibitions in the near future.
                 </div>
                 <svg className={styles.aboutFloatie} viewBox="0 0 2000 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_f_119_1042)">
+                    <g filter={isChromium ? "url(#filter0_f_119_1042)" : ""}>
                         <circle r={circlePrams.circ_rs[3]} cx={circlePrams.circ_cxs[3]} cy={circlePrams.circ_cys[3]} fill="#907CFF" fillOpacity="0.75" />
                         <circle r={circlePrams.circ_rs[4]} cx={circlePrams.circ_cxs[4]} cy={circlePrams.circ_cys[4]} fill="#DB19FA" fillOpacity="0.75" />
                         <circle r={circlePrams.circ_rs[5]} cx={circlePrams.circ_cxs[5]} cy={circlePrams.circ_cys[5]} fill="#FF9900" fillOpacity="0.75" />
@@ -166,10 +174,14 @@ function Home() {
             </div>
 
             {/* teams section */}
-            <div className={styles.teamBanner}>
-                <div className={styles.teamHeader}>teams</div>
-                <TeamBubble/>
+            <div className={styles.teamMaster}>
+                <div className={styles.teamBanner}>
+                    <div className={styles.teamHeader}>teams</div>
+                    <TeamBubble start="#D333D3" end="#FFB800" suf="ban" />
+                </div>
+                <TeamCards />
             </div>
+
 
 
         </div>

@@ -29,13 +29,14 @@
             "3D Printing"
         ],
         "gradient-light": {
+            "start": "#B80324",
+            "end": "#B93F3F"
+        },
+        "gradient-dark": {
             "start": "#FF758E",
             "end": "#FF0000"
         },
-        "gradient-dark": {
-            "start": "#A0021E",
-            "end": "#FF0000"
-        }
+        "gradient-pseudo": "hwr"
     },
     {
         "id": 1,
@@ -70,7 +71,8 @@
         "gradient-dark": {
             "start": "#FFC875",
             "end": "#FF6B00"
-        }
+        },
+        "gradient-pseudo": "fes"
     },
     {
         "id": 2,
@@ -102,7 +104,8 @@
         "gradient-dark": {
             "start": "#E6FF83",
             "end": "#FFE81A"
-        }
+        },
+        "gradient-pseudo": "log"
     },
     {
         "id": 3,
@@ -136,7 +139,8 @@
         "gradient-dark": {
             "start": "#83FFC4",
             "end": "#2CFF1A"
-        }
+        },
+        "gradient-pseudo": "gpu"
     },
     {
         "id": 4,
@@ -173,7 +177,8 @@
         "gradient-dark": {
             "start": "#9583FF",
             "end": "#471AFF"
-        }
+        },
+        "gradient-pseudo": "bes"
     },
     {
         "id": 5,
@@ -213,7 +218,8 @@
         "gradient-dark": {
             "start": "#E683FF",
             "end": "#B61AFF"
-        }
+        },
+        "gradient-pseudo": "dna"
     },
     {
         "id": 6,
@@ -248,6 +254,7 @@
         "gradient-dark": {
             "start": "#FF83B0",
             "end": "#FF1AF6"
-        }
+        },
+        "gradient-pseudo": "gdv"
     }
 ]

@@ -112,6 +112,36 @@
     
 }
 
+.teamMaster{
+    width: 100%;
+    
+    overflow:hidden;
+}
+
+.teambubbleL{
+
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    /* max-height: 40vh; */
+    right: 0;
+    z-index: -1;
+    transform: translateX(50%);
+    
+}
+.teambubbleR{
+
+    position: absolute;
+    width: 100%;
+    height: 200%;
+
+    /* max-height: 40vh; */
+    left: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    
+}
+
 .teamHeader{
 
     font-size: calc(128px + 0.5vw);
@@ -128,14 +158,107 @@
     visibility: visible;
 }
 
+.teamContainer{
+        
+    width: 100%;
+    min-height: 100svh;
+    max-height: max-content;
+    padding: 2vw 10vw 10vw 10vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.teamCardL{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 20vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    z-index: 5;
+}
+.teamCardR{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 20vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: right;
+    z-index: 5;
+}
+.teamCardHeader{
+    font-size: calc(32px + 0.5vw);
+    z-index: 4;
+    width: 100%;
+    color: var(--text);
+    margin-right: 20px;
+}
+.teamCardBodyL{
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    padding-right: 50%;
+    box-sizing: border-box;
+    color: var(--text);
+}
+.teamCardBodyR{
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    padding-left: 50%;
+    box-sizing: border-box;
+    color: var(--text);
+}
+.teamCardExplrL{
+    padding-top: 2vh;
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: var(--text);
+}
+.teamCardExplrR{
+    padding-top: 2vh;
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: var(--text);
+}
+.textItem{
+    width: 100%;
+}
 @media screen and (min-width: 800px) {
     .aboutHeader{
-        font-size: calc(180px + 0.5vw);
+        font-size: calc(250px + 0.5vw);
     }
     .teamHeader{
-        font-size: calc(180px + 0.5vw);
+        font-size: calc(250px + 0.5vw);
+    }
+    .teamCardL{
+        margin-bottom: 30vh;
+    }
+    .teamCardR{
+        margin-bottom: 30vh;
     }
     .teamBanner{
         margin-top: 40vh;
+    }
+    .teamCardHeader{
+        font-size: calc(64px + 0.5vw);
     }
 }
