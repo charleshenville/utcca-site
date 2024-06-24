@@ -30,11 +30,11 @@ function NavBar(prams) {
             <div className={sidebar ? styles.allshown : styles.all}>
                 <div className={sidebar ? styles.sidebarshown : styles.sidebar}>
                     <div className={sidebar ? styles.sidebartransshown : styles.sidebartrans}>
-                        <Link to='/' className={styles.nofancy}>Home</Link>
-                        <div>About</div>
-                        <div>Teams</div>
-                        <Link to='/gallery' className={styles.nofancy}>Gallery</Link>
-                        <div>Contact</div>
+                        <Link to='/' className={styles.nofancy} onClick={toggleSidebarState}>Home</Link>
+                        <div className={styles.nofancy} onClick={toggleSidebarState}>About</div>
+                        <div className={styles.nofancy} onClick={toggleSidebarState}>Teams</div>
+                        <Link to='/gallery' className={styles.nofancy} onClick={toggleSidebarState}>Gallery</Link>
+                        <div className={styles.nofancy} onClick={toggleSidebarState}>Contact</div>
                     </div>
 
                 </div>

@@ -1,26 +1,26 @@
-.master-container {
+.main {
     width: 100%;
-    min-height: 100svh;
-    max-height: max-content;
+    height: 100svh;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .galleryTextContainer {
     width: 100%;
-    min-height: 100svh;
-    max-height: max-content;
     padding: 10vw;
-    margin-top: 0rem;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Changed from 'left' */
-    justify-content: center;
-    background-color: var(--bkg);
+    display: block;
     position: relative;
+    text-justify: center;
+    text-align: center;
+    color: var(--text);
+    font-size: calc(32px + 0.5vw);
+    font-family: 'OffBit', sans-serif;
+    transition: opacity 1s linear;
 }
 
 .headerAndGear {
@@ -29,7 +29,7 @@
 }
 
 .galleryTextHeader {
-    font-size: calc(64px + 0.5vw);
+    font-size: calc(32px + 0.5vw);
     font-family: 'OffBit', sans-serif;
     justify-content: flex-start; /* Changed from 'left' */
     text-align: left;
@@ -47,14 +47,52 @@
     font-family: 'Helvetica Neue', sans-serif;
     color: var(--text);
 }
+@keyframes spinLeft {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+@keyframes spinRight {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+.utccaLogo{
+    position: absolute;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+.gear{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
+    opacity: 0.1;
+    /* border: 1px solid var(--text); */
+    transform: translateX(5vw) translateY(5rem);
+}
+.gearRL{
+    transform-origin: 28.5285285285% 33.3917616126%;
+    animation: spinLeft 60s linear infinite;
+}
+.gearRR{
+    transform-origin: 71.4714714715% 66.6082383874%;
+    animation: spinRight 60s linear infinite;
+}
 
 @media screen and (min-width: 800px) {
-    .galleryTextHeader {
-        font-size: calc(160px + 0.5vw);
-    }
-    .galleryTextBody {
-        font-size: calc(20px + 0.5vw);
+    .galleryTextContainer {
+        font-size: calc(64px + 0.5vw);
     }
 }
 
+  
 

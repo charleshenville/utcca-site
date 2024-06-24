@@ -40,11 +40,11 @@
     top: 0;
     left: 0;
     z-index: 1001;
-    width: 0%;
+    width: 0px;
     height: 100%;
     background-color: var(--bkg);
     color: var(--text);
-    font-family: 'Alte Haas Grotesk';
+    font-family: 'Helvetica';
     font-size: calc(60px + 0.5vw);
     display: flex;
     flex-direction: column;
@@ -60,9 +60,9 @@
     top: 0;
     left: 0;
     z-index: 1001;
-    width: 30%;
+    width: 500px;
     overflow: hidden;
-    font-family: 'Alte Haas Grotesk';
+    font-family: 'Helvetica';
     font-size: calc(60px + 0.5vw);
     height: 100%;
     background-color: var(--bkg);
@@ -77,15 +77,28 @@
 
 .sidebartrans{
     visibility: hidden;
-    transition: all 0.2s cubic-bezier(1, 0, 1, 1);
+    width: 100%;
+    /* margin-left: 60%; */
+    /* transform: translateX(-100%); */
+    transition: all 0.2s linear;
 }
 .sidebartransshown{
     visibility: show;
-    transition: all 0.2s cubic-bezier(1, 0, 1, 1);
+    width: 100%;
+    /* margin-left: 60%; */
+    transition: all 0.2s linear;
 }
 .nofancy{
     text-decoration: none;
     color: var(--text);
+    margin: 30px;
+    transition: all 0.2s linear;
+    /* width: 100%; */
+    cursor: pointer;
+}
+.nofancy:hover{
+    opacity: 0.5;
+    /* background-color: var(--tbkg); */
 }
 
 .main{
@@ -194,12 +207,12 @@
     .sidebarshown{
         width: 100%;
     }
-    .main{
+    /* .main{
         height: 10svh;
     }
     .mainbelow{
         top: 10svh;
-    }
+    } */
     .burger{
         width: 10svh;
     }

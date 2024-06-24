@@ -25,15 +25,17 @@ const TeamBubble = (props) => {
 
     const bubbleClass = suf == "ban" ? styles.teambubble : (isLeft ? styles.teambubbleL : styles.teambubbleR);
     const svgRef = useRef(null);
+    const firstRef = useRef(true);
 
     useEffect(() => {
+        
         const svg = svgRef.current;
         const paths = svg.querySelectorAll(`.${styles.circleIdentify.split(' ')[0]}`);
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-
+                if (entry.isIntersecting || firstRef.current) {
+                    firstRef.current = false;
                     const observerInterval = setInterval(() => {
 
                         const now = performance.now() / 1000

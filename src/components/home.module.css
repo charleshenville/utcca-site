@@ -29,6 +29,22 @@
     left: 0;
     z-index: 2;
 }
+.abssvg2{
+
+    position: absolute;
+    background-color: var(--text);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.25s linear;
+    cursor: pointer;
+
+}
+.abssvg2:hover{
+
+    background-color: rgba(0,0,0,0);
+    
+}
 
 .gaussianb{
 
@@ -93,6 +109,7 @@
     max-height: max-content;
     padding: 10vw;
     margin-top: 20vh;
+    margin-bottom: 5vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -242,7 +259,40 @@
 .textItem{
     width: 100%;
 }
+.spacer{
+    width: 100%;
+    height: 10vh;
+}
+.contactContainer{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--text);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.noFancy{
+    font-size: calc(12px + 0.5vw);
+    text-decoration: none;
+    width: 100%;
+    color: var(--bkg);
+    transition: all 0.5s linear;
+}
+.noFancy:hover{
+    opacity: 0.5;
+}
 @media screen and (min-width: 800px) {
+    .contactContainer{
+        padding: 50px;
+    }
+    .noFancy{
+        font-size: calc(24px + 0.5vw);
+    }
     .aboutHeader{
         font-size: calc(250px + 0.5vw);
     }
