@@ -82,6 +82,10 @@
     transform-origin: 28.5285285285% 33.3917616126%;
     animation: spinLeft 60s linear infinite;
 }
+.gearCenteredSingle{
+    transform-origin: 50% 35%;
+    animation: spinLeft 60s linear infinite;
+}
 .gearRR{
     transform-origin: 71.4714714715% 66.6082383874%;
     animation: spinRight 60s linear infinite;
