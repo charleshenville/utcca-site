@@ -8,6 +8,26 @@ function NavBar(prams) {
     const [sidebar, setSidebar] = useState(false);
     const [isLight, setIsLight] = useState(true);
 
+    function handleScrollHome(){
+        const docelem = document.getElementById("homeh");
+        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        setSidebar(!sidebar);
+    }
+    function handleScrollAbout(){
+        const docelem = document.getElementById("about");
+        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        setSidebar(!sidebar);
+    }
+    function handleScrollTeams(){
+        const docelem = document.getElementById("teams");
+        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        setSidebar(!sidebar);
+    }
+    function handleScrollContact(){
+        const docelem = document.getElementById("contact");
+        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        setSidebar(!sidebar);
+    }
     function toggleSidebarState() {
         setSidebar(!sidebar);
     }
@@ -30,11 +50,11 @@ function NavBar(prams) {
             <div className={sidebar ? styles.allshown : styles.all}>
                 <div className={sidebar ? styles.sidebarshown : styles.sidebar}>
                     <div className={sidebar ? styles.sidebartransshown : styles.sidebartrans}>
-                        <Link to='/' className={styles.nofancy} onClick={toggleSidebarState}>Home</Link>
-                        <div className={styles.nofancy} onClick={toggleSidebarState}>About</div>
-                        <div className={styles.nofancy} onClick={toggleSidebarState}>Teams</div>
+                        <Link to='/' className={styles.nofancy} onClick={handleScrollHome}>Home</Link>
+                        <Link to='/' className={styles.nofancy} onClick={handleScrollAbout}>About</Link>
+                        <Link to='/' className={styles.nofancy} onClick={handleScrollTeams}>Teams</Link>
                         <Link to='/gallery' className={styles.nofancy} onClick={toggleSidebarState}>Gallery</Link>
-                        <div className={styles.nofancy} onClick={toggleSidebarState}>Contact</div>
+                        <Link to='/' className={styles.nofancy} onClick={handleScrollContact}>Contact</Link>
                     </div>
 
                 </div>
