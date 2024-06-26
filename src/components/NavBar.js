@@ -8,43 +8,65 @@ function NavBar(prams) {
     const [sidebar, setSidebar] = useState(false);
     const [isLight, setIsLight] = useState(true);
 
-    function handleScrollHome(){
+    function handleScrollHome() {
         const docelem = document.getElementById("homeh");
-        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        if (docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
         setSidebar(!sidebar);
     }
-    function handleScrollAbout(){
+    function handleScrollAbout() {
         const docelem = document.getElementById("about");
-        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        if (docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
         setSidebar(!sidebar);
     }
-    function handleScrollTeams(){
+    function handleScrollTeams() {
         const docelem = document.getElementById("teams");
-        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        if (docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
         setSidebar(!sidebar);
     }
-    function handleScrollContact(){
+    function handleScrollContact() {
         const docelem = document.getElementById("contact");
-        if(docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
+        if (docelem !== null) docelem.scrollIntoView({ behavior: 'smooth' });
         setSidebar(!sidebar);
     }
     function toggleSidebarState() {
         setSidebar(!sidebar);
     }
-    function toggleColourTheme() {
+    const changeCSSVars = () => {
         if (isLight) {
-            // document.documentElement.style.setProperty('data-theme', 'light');
             document.documentElement.style.setProperty('--text', 'var(--light-text)');
             document.documentElement.style.setProperty('--bkg', 'var(--light-bkg)');
             document.documentElement.style.setProperty('--tbkg', 'var(--light-tbkg)');
         } else {
-            // document.documentElement.style.setProperty('data-theme', 'light');
             document.documentElement.style.setProperty('--text', 'var(--dark-text)');
             document.documentElement.style.setProperty('--bkg', 'var(--dark-bkg)');
             document.documentElement.style.setProperty('--tbkg', 'var(--dark-tbkg)');
         }
-        setIsLight(!isLight);
-    }
+    };
+
+    const toggleColourTheme = () => {
+        setIsLight((prevIsLight) => !prevIsLight);
+    };
+
+    useEffect(() => {
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+        setIsLight(!prefersDarkScheme.matches); // Set the initial theme
+        changeCSSVars(); // Apply initial theme
+
+        const themeChangeListener = (event) => {
+            setIsLight(!event.matches);
+        };
+        prefersDarkScheme.addEventListener('change', themeChangeListener);
+
+        return () => {
+            prefersDarkScheme.removeEventListener('change', themeChangeListener);
+        };
+    }, []);
+
+    useEffect(() => {
+        changeCSSVars();
+    }, [isLight]);
+
     if (!prams.report) return (
         <div className={styles.master}>
             <div className={sidebar ? styles.allshown : styles.all}>
