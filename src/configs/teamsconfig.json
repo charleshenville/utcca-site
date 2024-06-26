@@ -29,13 +29,14 @@
             "3D Printing"
         ],
         "gradient-light": {
-            "start": "#FF758E",
-            "end": "#FF0000"
+            "start": "#B80324",
+            "end": "#B93F3F00"
         },
         "gradient-dark": {
-            "start": "#A0021E",
-            "end": "#FF0000"
-        }
+            "start": "#FF758E",
+            "end": "#FF000000"
+        },
+        "gradient-pseudo": "hwr"
     },
     {
         "id": 1,
@@ -65,12 +66,13 @@
         ],
         "gradient-light": {
             "start": "#AF6A02",
-            "end": "#FF4B00"
+            "end": "#FF4B0000"
         },
         "gradient-dark": {
             "start": "#FFC875",
-            "end": "#FF6B00"
-        }
+            "end": "#FF6B0000"
+        },
+        "gradient-pseudo": "fes"
     },
     {
         "id": 2,
@@ -97,12 +99,13 @@
         ],
         "gradient-light": {
             "start": "#6D6B32",
-            "end": "#D3B100"
+            "end": "#D3B10000"
         },
         "gradient-dark": {
             "start": "#E6FF83",
-            "end": "#FFE81A"
-        }
+            "end": "#FFE81A00"
+        },
+        "gradient-pseudo": "log"
     },
     {
         "id": 3,
@@ -131,12 +134,13 @@
         ],
         "gradient-light": {
             "start": "#274B24",
-            "end": "#11D300"
+            "end": "#11D30000"
         },
         "gradient-dark": {
             "start": "#83FFC4",
-            "end": "#2CFF1A"
-        }
+            "end": "#2CFF1A00"
+        },
+        "gradient-pseudo": "gpu"
     },
     {
         "id": 4,
@@ -168,12 +172,13 @@
         ],
         "gradient-light": {
             "start": "#25244B",
-            "end": "#1E00D3"
+            "end": "#1E00D300"
         },
         "gradient-dark": {
             "start": "#9583FF",
-            "end": "#471AFF"
-        }
+            "end": "#471AFF00"
+        },
+        "gradient-pseudo": "bes"
     },
     {
         "id": 5,
@@ -208,12 +213,13 @@
         ],
         "gradient-light": {
             "start": "#3A244B",
-            "end": "#9000D3"
+            "end": "#9000D300"
         },
         "gradient-dark": {
             "start": "#E683FF",
-            "end": "#B61AFF"
-        }
+            "end": "#B61AFF00"
+        },
+        "gradient-pseudo": "dna"
     },
     {
         "id": 6,
@@ -243,11 +249,12 @@
         ],
         "gradient-light": {
             "start": "#4B2443",
-            "end": "#CF00D3"
+            "end": "#CF00D300"
         },
         "gradient-dark": {
             "start": "#FF83B0",
-            "end": "#FF1AF6"
-        }
+            "end": "#FF1AF600"
+        },
+        "gradient-pseudo": "gdv"
     }
 ]

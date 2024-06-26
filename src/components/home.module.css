@@ -29,6 +29,22 @@
     left: 0;
     z-index: 2;
 }
+.abssvg2{
+
+    position: absolute;
+    background-color: var(--text);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.25s linear;
+    cursor: pointer;
+
+}
+.abssvg2:hover{
+
+    background-color: rgba(0,0,0,0);
+    
+}
 
 .gaussianb{
 
@@ -93,6 +109,7 @@
     max-height: max-content;
     padding: 10vw;
     margin-top: 20vh;
+    margin-bottom: 5vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -112,6 +129,36 @@
     
 }
 
+.teamMaster{
+    width: 100%;
+    
+    overflow:hidden;
+}
+
+.teambubbleL{
+
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    /* max-height: 40vh; */
+    right: 0;
+    z-index: -1;
+    transform: translateX(50%);
+    
+}
+.teambubbleR{
+
+    position: absolute;
+    width: 100%;
+    height: 200%;
+
+    /* max-height: 40vh; */
+    left: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    
+}
+
 .teamHeader{
 
     font-size: calc(128px + 0.5vw);
@@ -128,14 +175,140 @@
     visibility: visible;
 }
 
+.teamContainer{
+        
+    width: 100%;
+    min-height: 100svh;
+    max-height: max-content;
+    padding: 2vw 10vw 10vw 10vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.teamCardL{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 20vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    z-index: 5;
+}
+.teamCardR{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 20vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: right;
+    z-index: 5;
+}
+.teamCardHeader{
+    font-size: calc(32px + 0.5vw);
+    z-index: 4;
+    width: 100%;
+    color: var(--text);
+    margin-right: 20px;
+}
+.teamCardBodyL{
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    padding-right: 50%;
+    box-sizing: border-box;
+    color: var(--text);
+}
+.teamCardBodyR{
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    padding-left: 50%;
+    box-sizing: border-box;
+    color: var(--text);
+}
+.teamCardExplrL{
+    padding-top: 2vh;
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: var(--text);
+}
+.teamCardExplrR{
+    padding-top: 2vh;
+    font-size: calc(10px + 0.5vw);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: var(--text);
+}
+.textItem{
+    width: 100%;
+}
+.spacer{
+    width: 100%;
+    height: 10vh;
+}
+.contactContainer{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--text);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.noFancy{
+    font-size: calc(12px + 0.5vw);
+    text-decoration: none;
+    width: 100%;
+    color: var(--bkg);
+    transition: all 0.5s linear;
+}
+.noFancy:hover{
+    opacity: 0.5;
+}
 @media screen and (min-width: 800px) {
+    .contactContainer{
+        padding: 50px;
+    }
+    .noFancy{
+        font-size: calc(24px + 0.5vw);
+    }
     .aboutHeader{
-        font-size: calc(180px + 0.5vw);
+        font-size: calc(250px + 0.5vw);
     }
     .teamHeader{
-        font-size: calc(180px + 0.5vw);
+        font-size: calc(250px + 0.5vw);
+    }
+    .teamCardL{
+        margin-bottom: 30vh;
+    }
+    .teamCardR{
+        margin-bottom: 30vh;
     }
     .teamBanner{
         margin-top: 40vh;
+    }
+    .teamCardHeader{
+        font-size: calc(64px + 0.5vw);
     }
 }
