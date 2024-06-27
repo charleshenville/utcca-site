@@ -194,7 +194,7 @@ function Home() {
                     </svg>
                 </Link>
 
-                <svg styles={{ "transform": "translateY(-500px)" }} className={styles.gaussianb} viewBox="0 0 480 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.gaussianb} viewBox="0 0 480 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter={"url(#blurblur)"}>
                         <circle r={circlePrams.circ_rs[0]} cx={circlePrams.circ_cxs[0]} cy={circlePrams.circ_cys[0] - 150} fill="#DB19FA" fillOpacity="0.75" />
                         <circle r={circlePrams.circ_rs[1]} cx={circlePrams.circ_cxs[1]} cy={circlePrams.circ_cys[1] - 150} fill="#FFC806" fillOpacity="0.75" />

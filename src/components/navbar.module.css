@@ -220,4 +220,10 @@
     .burger{
         width: 10svh;
     }
+    .sidebar{
+        font-size: calc(32px + 0.5vw);
+    }
+    .sidebarshown{
+        font-size: calc(32px + 0.5vw);
+    }
 }
