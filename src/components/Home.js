@@ -229,9 +229,9 @@ function Home() {
 
             {/* contact section */}
             <div id="contact" className={styles.contactContainer}>
-                <a className={styles.noFancy} href='/'>Contact</a>
-                <a className={styles.noFancy} href='/'>Sponsor</a>
-                <a className={styles.noFancy} href='/'>Join</a>
+                <a className={styles.noFancy} href='https://www.instagram.com/uoftcca/'>Contact</a>
+                <div className={styles.noFancy} style={{"cursor":"not-allowed"}}>Sponsor</div>
+                <a className={styles.noFancy} href='https://forms.gle/Cvias4cKN7C4yQbj6'>Apply</a>
             </div>
 
             {/* <canvas ref={mainCanvRef} className={styles.canvas}/> */}

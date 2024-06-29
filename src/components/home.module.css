@@ -109,10 +109,10 @@
 
 .teamBanner{
     width: 100%;
-    min-height: 70svh;
+    min-height: 30svh;
     max-height: max-content;
     padding: 10vw;
-    margin-top: 20vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     box-sizing: border-box;
     display: flex;
@@ -321,6 +321,8 @@
     }
     .teamBanner{
         margin-top: 40vh;
+        min-height: 70svh;
+
     }
     .teamCardHeader{
         font-size: calc(64px + 0.5vw);
