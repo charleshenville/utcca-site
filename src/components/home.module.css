@@ -32,7 +32,7 @@
 .abssvg2{
 
     position: absolute;
-    background-color: var(--text);
+    /* background-color: var(--text); */
     top: 0;
     left: 0;
     z-index: 2;
@@ -43,12 +43,12 @@
     box-sizing: border-box;
 
 }
-.abssvg2:hover{
+/* .abssvg2:hover{
 
     box-sizing: border-box;
     background-color: rgba(0,0,0,0);
     
-}
+} */
 
 .gaussianb{
 
@@ -299,6 +299,7 @@
     z-index: 1;
 
 }
+
 @media screen and (min-width: 800px) {
     .contactContainer{
         padding: 50px;
