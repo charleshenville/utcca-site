@@ -109,28 +109,29 @@
     },
     {
         "id": 3,
-        "name": "GPU",
-        "description": "Develop highly parallelized software used to render scenes or perform high volumes of computation. Work closely alongside the GameDev Team.",
+        "name": "Game Development",
+        "description": "Develop skills learning and using new software and frameworks to develop and design video games. Work closely alongside the GPU Team.",
         "skills": [
-            "C/C++",
-            "CUDA",
-            "OpenGL",
-            "Vulkan",
-            "DirectX",
-            "GLSL",
-            "Bend",
-            "Shader Programming",
-            "Parallel Programming",
-            "Computer Graphics",
+            "Unity",
+            "C#",
+            "Game Design",
+            "Game Development",
             "Game Engines",
+            "3D Modelling",
+            "Texturing",
+            "Animation",
+            "Rigging",
+            "Lighting",
+            "Shading",
+            "Rendering",
             "Testing",
             "Documentation"
         ],
         "explore": [
-            "GPU Programming",
-            "Parallel Computing",
-            "Compute Shaders",
-            "Neural Networks"
+            "Concepts in Game Design",
+            "Procedural Art Generation",
+            "Game Engines",
+            "3D Modelling"
         ],
         "gradient-light": {
             "start": "#274B24",
@@ -140,7 +141,7 @@
             "start": "#83FFC4",
             "end": "#2CFF1A00"
         },
-        "gradient-pseudo": "gpu"
+        "gradient-pseudo": "gdv"
     },
     {
         "id": 4,
@@ -220,41 +221,5 @@
             "end": "#B61AFF00"
         },
         "gradient-pseudo": "dna"
-    },
-    {
-        "id": 6,
-        "name": "Game Development",
-        "description": "Develop skills learning and using new software and frameworks to develop and design video games. Work closely alongside the GPU Team.",
-        "skills": [
-            "Unity",
-            "C#",
-            "Game Design",
-            "Game Development",
-            "Game Engines",
-            "3D Modelling",
-            "Texturing",
-            "Animation",
-            "Rigging",
-            "Lighting",
-            "Shading",
-            "Rendering",
-            "Testing",
-            "Documentation"
-        ],
-        "explore": [
-            "Concepts in Game Design",
-            "Procedural Art Generation",
-            "Game Engines",
-            "3D Modelling"
-        ],
-        "gradient-light": {
-            "start": "#4B2443",
-            "end": "#CF00D300"
-        },
-        "gradient-dark": {
-            "start": "#FF83B0",
-            "end": "#FF1AF600"
-        },
-        "gradient-pseudo": "gdv"
     }
 ]

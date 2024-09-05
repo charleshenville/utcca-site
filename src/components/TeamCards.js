@@ -14,7 +14,7 @@ const TeamCards = (props) => {
         const intervalId = setInterval(() => {
             if (colourRef.current) {
                 const color = getComputedStyle(colourRef.current).color;
-                console.log(color);
+                // console.log(color);
                 if (color === 'rgb(0, 0, 0)') {
                     setLm(true);
                 } else {
