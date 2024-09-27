@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "title": "Project Alpha",
+        "description": "Our very first project. A custom ESP32 BLE controller for a game-like open-world siumulation built with three.js, with a Flask interface connecting the two. Displayed at the 2024 EngSoc Club Fair",
+        "cover-image": "/assets/gallery/pa1.png",
+        "images": [
+            "/assets/gallery/pa2.jpg",
+            "/assets/gallery/pa5.png",
+            "/assets/gallery/pa6.png",
+            "/assets/gallery/pa7.png",
+            "/assets/gallery/pa3.png",
+            "/assets/gallery/pa4.png"
+        ]
+    }
+]

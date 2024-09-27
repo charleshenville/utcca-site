@@ -2,110 +2,210 @@
     width: 100%;
     height: 100svh;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     overflow: hidden;
-}
-
-.galleryTextContainer {
-    width: 100%;
-    padding: 10vw;
-    box-sizing: border-box;
-    display: block;
-    position: relative;
-    text-justify: center;
-    text-align: center;
     color: var(--text);
-    font-size: calc(32px + 0.5vw);
-    font-family: 'OffBit', sans-serif;
-    transition: opacity 1s linear;
+    transition: filter 0.5s;
 }
 
-.headerAndGear {
-    display: flex;
-    align-items: center;
-}
-
-.galleryTextHeader {
-    font-size: calc(32px + 0.5vw);
-    font-family: 'OffBit', sans-serif;
-    justify-content: flex-start; /* Changed from 'left' */
-    text-align: left;
-    z-index: 4;
-    color: var(--text);
-    margin-right: 20px; /* Add some space between the header and the gear icon */
-}
-
-.galleryTextBody {
-    font-size: calc(12px + 0.5vw);
-    width: 50%;
-    justify-content: flex-start; /* Changed from 'left' */
-    text-align: left;
-    z-index: 4;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: var(--text);
-}
-@keyframes spinLeft {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
-@keyframes spinRight {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-}
-.utccaLogo{
+.title {
     position: absolute;
-    width: 30%;
-    left: 0;
-    bottom: 0;
-    opacity: 0.1;
+    left: 4rem;
+    bottom: 3rem;
 }
-.gear{
-    /* position: absolute; */
+
+h1 {
+    font-family: 'Alte Haas Grotesk';
+    font-size: 48px;
+    margin: 0;
+    text-align: left;
+    opacity: 0.5;
+}
+
+.galleryTitle {
+    font-size: 96px;
+    margin-top: -1rem;
+    background: #ff105f;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    animation: gradCycle 10s infinite;
+}
+
+@keyframes gradCycle {
+    0% {
+    background: #ff105f;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    animation: gradCycle 10s infinite;
+    }
+    50% {
+    background: #ffad06;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    animation: gradCycle 10s infinite;
+    }
+    100% {
+    background: #ff105f;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    animation: gradCycle 10s infinite;
+    }
+    
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+  	transform: perspective(1000px);
+    height: 90%;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    transition-delay: 0.2s;
+}
+
+.item:hover {
+    box-shadow: 0 0px 30px rgb(255, 0, 132);
+    animation: bshadowCycle 2s linear infinite;
+}
+@keyframes bshadowCycle {
+    0%{
+        box-shadow: 0 0px 30px rgb(255, 0, 132);
+
+    }
+    50%{
+        box-shadow: 0 0px 30px rgb(255, 179, 0);
+
+    }
+    100%{
+        box-shadow: 0 0px 30px rgb(255, 0, 132);
+
+
+    }
+}
+
+.item img {
     width: 100%;
     height: 100%;
-    /* right: 0;
-    top: 0; */
-    /* border: 1px solid var(--text); */
-}
-.gearRL{
-    transform-origin: 28.5285285285% 33.3917616126%;
-    animation: spinLeft 60s linear infinite;
-}
-.gearCenteredSingle{
-    transform-origin: 50% 35%;
-    animation: spinLeft 60s linear infinite;
-}
-.gearRR{
-    transform-origin: 71.4714714715% 66.6082383874%;
-    animation: spinRight 60s linear infinite;
-}
-.reference{
-    position: absolute;
-    width: 30%;
-    height: 50%;
-    /* height: min-content; */
-    right: 0;
-    top: 0;
-    transform: translateX(5vw) translateY(5rem);
-    opacity: 0.1;
+    object-fit: cover;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    pointer-events: none;
+    opacity: 0.7;
 }
 
-@media screen and (min-width: 800px) {
-    .galleryTextContainer {
-        font-size: calc(64px + 0.5vw);
+.item:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.item h2 {
+    font-family: 'Alte Haas Grotesk';
+    background-color: var(--tbkg);
+    box-sizing: border-box;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 32px;
+    opacity: 0;
+    /* transform: translateY(-3.5rem); */
+    transition: opacity 0.5s, transform 0.5s;
+    pointer-events: none;
+}
+
+.item:hover h2 {
+    opacity: 1;
+    transform: translateY(-5.8rem);
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 23.5vw;
+    height: 60%;
+    width: 50vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: var(--bkg);
+    background: var(--text);
+    box-shadow: 0 0 60px rgb(139, 61, 207, 0.5);
+    border-radius: 25px 25px 0 0;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    transform: translateY(100px);
+    transition: all 0.5s;
+    animation: bshadowCycle 5s ease-in-out infinite;
+}
+@media screen and (max-width: 800px) {
+    .modal{
+        left: 8vw;
+        width: 70vw;
     }
 }
 
-  
+.modal.visible {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.modal h3 {
+    font-family: 'Alte Haas Grotesk';
+    text-align: left;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.modal p {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.modalImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(calc(70px + 10vmin), 100%), 1fr));
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.modalImages img {
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.modalImages img:hover {
+    transform: scale(1.1);
+}
