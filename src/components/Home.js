@@ -167,7 +167,7 @@ function Home() {
                 </svg>
             </div>
 
-            <div className={styles.current}>Looking for our Application Form? It's <a className={styles.applink} href="https://forms.gle/Cvias4cKN7C4yQbj6">here</a>. Be sure to apply by October 5, 2024.</div>
+            <div className={styles.current}>Looking for our Application Form? It's <a className={styles.applink} href="https://forms.gle/Cvias4cKN7C4yQbj6">here</a>. Be sure to apply soon.</div>
 
             <ScrollPrompt />
             {/* about section */}
