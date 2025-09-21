@@ -83,7 +83,7 @@ function NavBar(prams) {
                 <div onClick={toggleSidebarState} className={sidebar ? styles.clickOff : styles.clickOffhidden} />
             </div>
             <div className={styles.main} />
-            <div className={styles.mainbelow} />
+            {/* <div className={styles.mainbelow} /> */}
             <div className={styles.mainhidden}>
                 <svg onClick={toggleSidebarState} className={styles.burger} width="96" height="72" viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     {
@@ -101,8 +101,8 @@ function NavBar(prams) {
                     }
                 </svg>
                 <svg onClick={toggleColourTheme} className={styles.switch} viewBox="0 0 260 132" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="2" width="256" height="127.502" rx="63.751" fill="var(--bkg)" stroke="var(--text)" stroke-width="4" />
-                    <circle cx="194" cy="66" r="25" fill="var(--bkg)" stroke="var(--text)" stroke-width="4" />
+                    <rect x="2" y="2" width="256" height="127.502" rx="63.751" fill="#00000000" stroke="var(--text)" stroke-width="4" />
+                    <circle cx="194" cy="66" r="25" fill="#00000000" stroke="var(--text)" stroke-width="4" />
                     <line x1="64" y1="91" x2="64" y2="41" stroke="var(--text)" stroke-width="4" />
                     <circle className={isLight ? styles.switchBallLight : styles.switchBallDark} cx="64.5" cy="65.5" r="50.5" fill="var(--text)" />
                 </svg>

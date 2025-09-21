@@ -119,7 +119,11 @@
     width: 100%;
     height: 7svh;
 
-    background-color: var(--bkg);
+    background-color: #ffffff01;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    
+    
     color: var(--text);
 
 }
@@ -138,7 +142,7 @@
     width: 100%;
     height: 1svh;
 
-    background: linear-gradient(180deg, var(--bkg) 0%, var(--bkg) 0.01%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, #000 0%, #000 0.01%, rgba(0,0,0,0) 100%);
     /* background-color: var(--bkg); */
 
 }

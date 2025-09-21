@@ -42,7 +42,7 @@ function Home() {
     const [mobile, setMobile] = useState(win_width < 800);
     const [arrXoffs, setArrXoffs] = useState(0);
 
-    const omega = 0.0003;
+    const omega = 0.001;
     const tau3 = 2 * Math.PI / ((3) * omega);
     const tau5 = 2 * Math.PI / ((5) * omega);
     const signs = [1, -1, 1, 1, 1, 1, 1, 1, 1, -1, 1];
